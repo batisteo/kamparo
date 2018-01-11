@@ -1,8 +1,8 @@
 <template>
   <div class="layout-padding">
-    <h5>Partoprenantoj</h5>
-
     <q-search placeholder="Serĉi" v-model="search" autofocus />
+
+    <h5>Partoprenantoj</h5>
 
     <q-toggle v-model="notPaid" color="red" label="ne pagis" />&nbsp;
     <q-toggle v-model="prePaid" color="purple-4" label="antaŭpagis" />&nbsp;

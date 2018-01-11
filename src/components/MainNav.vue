@@ -1,5 +1,6 @@
 <template>
   <div>
+    <login-modal ref='loginModal' />
     <q-layout ref="layout" view="hHh LpR fff" reveal>
       <!-- Header -->
       <q-toolbar slot="header">
@@ -13,7 +14,7 @@
           <q-btn v-if="$store.state.isAuthenticated" flat @click="$router.push('/profile')">
             <q-icon name="face" />
           </q-btn>
-          <q-btn v-else flat @click="$router.push('/login')">
+          <q-btn v-else flat @click="$store.commit('openLogin')">
             <q-icon name="account_circle" />
           </q-btn>
       </q-toolbar>
@@ -35,11 +36,18 @@
 
 <script>
 import LeftLinks from '@/LeftLinks.vue'
+import LoginModal from '@/LoginModal.vue'
 
 export default {
   props: ['title', 'slug', 'footer'],
   components: {
-    LeftLinks
+    LeftLinks,
+    LoginModal
+  },
+  methods: {
+    notify () {
+      console.log(this)
+    }
   }
 }
 </script>

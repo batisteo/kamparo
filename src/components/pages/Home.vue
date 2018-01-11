@@ -5,6 +5,7 @@
       <div class="row">
         <q-card class="col-md">
           <q-card-title>
+            <q-icon name="group" color="blue" size="2rem" />
             Partoprenantoj
           </q-card-title>
           <q-card-separator />
@@ -50,7 +51,7 @@
 export default {
   created () {
     this.$auth.ready(function () {
-      console.log(this)
+      // console.log(this)
     })
   }
 }

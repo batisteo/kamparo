@@ -1,5 +1,5 @@
 <template>
-  <q-list no-border link inset-separator>
+  <q-list no-border link sparse separator>
     <q-list-header></q-list-header>
     <q-side-link item to="/" exact>
       <q-item-side icon="home" />
@@ -10,7 +10,7 @@
       <q-item-main label="Ensaluti" />
     </q-side-link>
     <q-side-link item to="/form">
-      <q-item-side icon="plus_one" />
+      <q-item-side icon="edit" />
       <q-item-main label="Aliĝilo" />
     </q-side-link>
     <q-side-link item to="/partoprenantoj">

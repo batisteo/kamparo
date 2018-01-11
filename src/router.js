@@ -1,10 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Home from '@/Home.vue'
-import Login from '@/Login.vue'
-import Partoprenantoj from '@/Partoprenantoj.vue'
-import Organizantoj from '@/Organizantoj.vue'
+import Home from '@/pages/Home.vue'
+import Partoprenantoj from '@/pages/Partoprenantoj.vue'
+import Organizantoj from '@/pages/Organizantoj.vue'
 
 Vue.use(VueRouter)
 
@@ -31,9 +30,8 @@ export default new VueRouter({
    */
 
   routes: [
-    { path: '/', component: Home },
     { path: '/partoprenantoj', component: Partoprenantoj },
     { path: '/organizantoj', component: Organizantoj },
-    { path: '/login/', component: Login }
+    { path: '/', component: Home }
   ]
 })
